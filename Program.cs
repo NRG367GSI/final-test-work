@@ -34,8 +34,8 @@ string[] SequenceRandomString(int sizeSequence) //Создает массив с
         int sizeString = new Random().Next(1, 10);
         for (int i = 0; i < sizeString; i++)
         {
-        int randomLetter = new Random().Next(0, alphanumeric.Length);
-        secondRows += alphanumeric[randomLetter];
+            int randomLetter = new Random().Next(0, alphanumeric.Length);
+            secondRows += alphanumeric[randomLetter];
         }
         sequence[j] = secondRows;
         secondRows = string.Empty;
